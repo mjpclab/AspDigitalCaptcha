@@ -393,7 +393,8 @@ Response.Expires = -1
 Response.AddHeader "Pragma","no-cache"
 Response.AddHeader "Cache-Control","no-cache, must-revalidate"
 
-Response.BinaryWrite bmpHeader & bmpStream
+Response.BinaryWrite bmpHeader
+Response.BinaryWrite bmpStream
 Response.End
 
 
